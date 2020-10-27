@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="443.0" style="-fx-background-color: #4bd5e7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsi.FXML.CreateAdultFXMLController">
+   <children>
+      <TextField fx:id="addNameEntry" layoutX="147.0" layoutY="95.0" promptText="Name" />
+      <TextField fx:id="addEmailEntry" layoutX="147.0" layoutY="141.0" promptText="Email" />
+      <TextField fx:id="addPhoneEntry" layoutX="147.0" layoutY="189.0" promptText="Phone" />
+      <TextField fx:id="addAmtEntry" layoutX="147.0" layoutY="234.0" promptText="Current Amount Paid" />
+      <Label fx:id="addAdultlbl" alignment="CENTER" layoutX="126.0" layoutY="38.0" prefHeight="45.0" prefWidth="192.0" text="Add Adult" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="createAdultBtn" layoutX="160.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleCreateAdultBtn" text="Add to Database" />
+      <ComboBox fx:id="addAdultGroupCB" layoutX="147.0" layoutY="283.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
