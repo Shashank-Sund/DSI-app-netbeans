@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="506.0" prefWidth="568.0" style="-fx-background-color: #4bd5e7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsi.CreateChildController">
+   <children>
+      <Label fx:id="addChildlbl" layoutX="210.0" layoutY="34.0" text="Add Child" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameEntry" layoutX="204.0" layoutY="96.0" promptText="Name" />
+      <TextField fx:id="gradeEntry" layoutX="204.0" layoutY="143.0" promptText="Grade" />
+      <TextField fx:id="amtEntry" layoutX="204.0" layoutY="188.0" promptText="Current Amount Paid" />
+      <TextField fx:id="c2name" layoutX="310.0" layoutY="300.0" promptText="Contact 2 Name" />
+      <TextField fx:id="c2email" layoutX="310.0" layoutY="346.0" promptText="Contact 2 Email" />
+      <TextField fx:id="c2phone" layoutX="310.0" layoutY="391.0" promptText="Contact 2 Phone" />
+      <TextField fx:id="c1name" layoutX="76.0" layoutY="300.0" promptText="Contact 1 Name" />
+      <TextField fx:id="c1email" layoutX="76.0" layoutY="346.0" promptText="Contact 1 Email" />
+      <TextField fx:id="c1phone" layoutX="76.0" layoutY="391.0" promptText="Contact 1 Phone" />
+      <Label fx:id="contact2lbl" layoutX="316.0" layoutY="265.0" text="Contact 2 info:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact1lbl" layoutX="83.0" layoutY="265.0" text="Contact 1 info:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="createChildBtn" layoutX="240.0" layoutY="444.0" mnemonicParsing="false" onAction="#actuallyCreateChild" text="Create Child" />
+      <ComboBox fx:id="groupCB" editable="true" layoutX="225.0" layoutY="227.0" prefWidth="150.0" promptText="Select Group" />
+   </children>
+</AnchorPane>

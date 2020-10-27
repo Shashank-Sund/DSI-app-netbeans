@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: #4bd5e7;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="dsi.CreateAwardController">
+   <children>
+      <Label fx:id="addAwardLbl" layoutX="180.0" layoutY="30.0" text="Add a DSI Award" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameEntry" layoutX="214.0" layoutY="100.0" promptText="Award Name" />
+      <TextArea fx:id="awardBox" layoutX="50.0" layoutY="153.0" prefHeight="200.0" prefWidth="484.0" promptText="Enter the award description here" />
+      <Button fx:id="createAwardBtn" layoutX="253.0" layoutY="366.0" mnemonicParsing="false" onAction="#actuallyCreateAward" text="Create Award" />
+   </children>
+</AnchorPane>
